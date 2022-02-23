@@ -71,7 +71,7 @@ function Projects() {
               isBlog={false}
               title="Github App"
               description="This app uses the github user public API to fetch user data by their user names. On the userprofile route a similar UI to the github profiles is rendered and links redirect to original github repos. Focuses on React Functional Components and Hooks."
-              link="https://github.com/soumyajit4419/AI_For_Social_Good"
+              link="https://github.com/goyal079/projects/tree/master/gitfunc"
             />
           </Col>
           <Col md={4} className="project-card">
