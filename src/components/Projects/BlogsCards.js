@@ -17,7 +17,9 @@ function BlogsCards(props) {
           <BsLink />
           &nbsp;
           {props.title}
-          <p style={{ marginBlockEnd: "0em" }}>{props.site}</p>
+          <p style={{ marginBlockEnd: "0em", color: "#9932cc" }}>
+            {props.site}
+          </p>
         </Card.Footer>
       </Card>
     </a>

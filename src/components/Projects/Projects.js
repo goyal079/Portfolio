@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
+import BlogsCards from "./BlogsCards";
 import Particle from "../Particle";
 
 import netflix from "../../Assets/Projects/netflix.png";
@@ -12,6 +13,8 @@ import todo from "../../Assets/Projects/todo.png";
 import bootstrap from "../../Assets/Projects/bootstrap.png";
 import github from "../../Assets/Projects/github.png";
 import mole from "../../Assets/Projects/mole.png";
+import DT from "../../Assets/Projects/DT.png";
+import DS from "../../Assets/Projects/DS.png";
 
 function Projects() {
   return (
@@ -54,7 +57,15 @@ function Projects() {
               link="https://github.com/goyal079/WeatherApp"
             />
           </Col>
-
+          <Col md={4} className="project-card">
+            <BlogsCards
+              imgPath={DT}
+              isBlog={false}
+              title="JavaScript Data Types"
+              site="Medium"
+              link="https://medium.com/@goyalhimanshu079/data-types-in-javascript-64d2b0192d9a"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={netflix}
@@ -91,6 +102,15 @@ function Projects() {
               title="Bootstrap Page"
               description="Simplistic landing page for a developer course with enrollment form components. UI only.(HTML,Vanilla JS, Bootstrap)"
               link="https://github.com/goyal079/projects/tree/master/bootstrap"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <BlogsCards
+              imgPath={DS}
+              isBlog={false}
+              title="Medium Blog on Basic Data Structures"
+              site="Medium"
+              link="https://medium.com/@goyalhimanshu079/basic-data-structures-8a694c5f03b"
             />
           </Col>
           <Col md={4} className="project-card">
